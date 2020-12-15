@@ -1,0 +1,220 @@
+﻿mhs@penguin:~$ mk dir directories**
+-bash: mk: command not found
+mhs@penguin:~$ mkdir directories**
+mhs@penguin:~$ cd directories**
+mhs@penguin:~/directories**$ > "forbidden.txt" "index.html" "structure.txt"
+-bash: index.html: command not found
+mhs@penguin:~/directories**$ ls
+forbidden.txt
+mhs@penguin:~/directories**$ >index.html structure.txt
+-bash: structure.txt: command not found
+mhs@penguin:~/directories**$ ls
+forbidden.txt  index.html
+mhs@penguin:~/directories**$ > structure.txt
+mhs@penguin:~/directories**$ mkdir Monkeys
+mhs@penguin:~/directories**$ 
+mhs@penguin:~/directories**$ mkdir images
+mhs@penguin:~/directories**$ mkdir e-texts
+mhs@penguin:~/directories**$ mkdir Dogs
+mhs@penguin:~/directories**$ cd dogs
+-bash: cd: dogs: No such file or directory
+mhs@penguin:~/directories**$ cd Dogs
+mhs@penguin:~/directories**/Dogs$ mkdir hate
+mhs@penguin:~/directories**/Dogs$ mkdir like
+mhs@penguin:~/directories**/Dogs$ cd hate
+mhs@penguin:~/directories**/Dogs/hate$ > bananas.html
+mhs@penguin:~/directories**/Dogs/hate$ >bones.html
+mhs@penguin:~/directories**/Dogs/hate$ cd ..
+mhs@penguin:~/directories**/Dogs$ cd like
+mhs@penguin:~/directories**/Dogs/like$ > bananas.html
+mhs@penguin:~/directories**/Dogs/like$ > bones.html
+mhs@penguin:~/directories**/Dogs/like$ cd../..
+-bash: cd../..: No such file or directory
+mhs@penguin:~/directories**/Dogs/like$ cd ../ ..
+-bash: cd: too many arguments
+mhs@penguin:~/directories**/Dogs/like$ cd ..
+mhs@penguin:~/directories**/Dogs$ cd ../..
+mhs@penguin:~$ cd directories**
+mhs@penguin:~/directories**$ dir
+Dogs     forbidden.txt  index.html  structure.txt
+e-texts  images         Monkeys
+mhs@penguin:~/directories**$ ls
+Dogs     forbidden.txt  index.html  structure.txt
+e-texts  images         Monkeys
+mhs@penguin:~/directories**$ cd Dogs
+mhs@penguin:~/directories**/Dogs$ ls
+hate  like
+mhs@penguin:~/directories**/Dogs$ cd
+mhs@penguin:~$ cd directories**
+mhs@penguin:~/directories**$ cd Dogs
+mhs@penguin:~/directories**/Dogs$ cd ..
+mhs@penguin:~/directories**$ cd e-texts
+mhs@penguin:~/directories**/e-texts$ 
+mhs@penguin:~/directories**/e-texts$ > gutindex.all
+mhs@penguin:~/directories**/e-texts$ mkdir Maugham,W.Somerset
+mhs@penguin:~/directories**/e-texts$ mkdir OReilly,Augustine
+mhs@penguin:~/directories**/e-texts$ mkdir Poe,EdgarAllan
+mhs@penguin:~/directories**/e-texts$ cd Poe,EdgarAllan
+mhs@penguin:~/directories**/e-texts/Poe,EdgarAllan$ 
+mhs@penguin:~/directories**/e-texts/Poe,EdgarAllan$ >poe1v10.txt, poe1v10.zip
+-bash: poe1v10.zip: command not found
+mhs@penguin:~/directories**/e-texts/Poe,EdgarAllan$ ls
+poe1v10.txt,
+mhs@penguin:~/directories**/e-texts/Poe,EdgarAllan$ >poe1v10.zip
+mhs@penguin:~/directories**/e-texts/Poe,EdgarAllan$ >story2.txt
+mhs@penguin:~/directories**/e-texts/Poe,EdgarAllan$ cd ..
+mhs@penguin:~/directories**/e-texts$ cd OReilly,Augustine
+mhs@penguin:~/directories**/e-texts/OReilly,Augustine$ > Alvira The Heroine of Vesuvius.txt
+-bash: The: command not found
+mhs@penguin:~/directories**/e-texts/OReilly,Augustine$ cd ..
+mhs@penguin:~/directories**/e-texts$ cd Maugham,W.Somerset
+mhs@penguin:~/directories**/e-texts/Maugham,W.Somerset$ > moona10.txt
+mhs@penguin:~/directories**/e-texts/Maugham,W.Somerset$ >moona10.zip
+mhs@penguin:~/directories**/e-texts/Maugham,W.Somerset$ cd ..
+mhs@penguin:~/directories**/e-texts$ cd ..
+mhs@penguin:~/directories**$ cd images
+mhs@penguin:~/directories**/images$ ls
+mhs@penguin:~/directories**/images$ mkdir cartoons
+mhs@penguin:~/directories**/images$ mkdir clipart
+mhs@penguin:~/directories**/images$ cd clipart
+mhs@penguin:~/directories**/images/clipart$ mkdir animals
+mhs@penguin:~/directories**/images/clipart$ mkdir food
+mhs@penguin:~/directories**/images/clipart$ 
+mhs@penguin:~/directories**/images/clipart$ cd food
+mhs@penguin:~/directories**/images/clipart/food$ >bananas.gif
+mhs@penguin:~/directories**/images/clipart/food$ >bone.gif
+mhs@penguin:~/directories**/images/clipart/food$ cd ..
+mhs@penguin:~/directories**/images/clipart$ cd animals
+mhs@penguin:~/directories**/images/clipart/animals$ > dog.gif
+mhs@penguin:~/directories**/images/clipart/animals$ > monkey.gif
+mhs@penguin:~/directories**/images/clipart/animals$ cd .
+mhs@penguin:~/directories**/images/clipart/animals$ cd ..
+mhs@penguin:~/directories**/images/clipart$ ls
+animals  food
+mhs@penguin:~/directories**/images/clipart$ dir
+animals  food
+mhs@penguin:~/directories**/images/clipart$ ls
+animals  food
+mhs@penguin:~/directories**/images/clipart$ cd ..
+mhs@penguin:~/directories**/images$ ls
+cartoons  clipart
+mhs@penguin:~/directories**/images$ dir
+cartoons  clipart
+mhs@penguin:~/directories**/images$ cd cartoons
+mhs@penguin:~/directories**/images/cartoons$ ls
+mhs@penguin:~/directories**/images/cartoons$ > df950523.jpg
+mhs@penguin:~/directories**/images/cartoons$ > df971202.jpg
+mhs@penguin:~/directories**/images/cartoons$ cd ..
+mhs@penguin:~/directories**/images$ cd ..
+mhs@penguin:~/directories**$ cd Monkeys
+mhs@penguin:~/directories**/Monkeys$ ls
+mhs@penguin:~/directories**/Monkeys$ mkdir hate
+mhs@penguin:~/directories**/Monkeys$ mkdir like
+mhs@penguin:~/directories**/Monkeys$ cd hate
+mhs@penguin:~/directories**/Monkeys/hate$ > bananas.html
+mhs@penguin:~/directories**/Monkeys/hate$ > bones.html
+mhs@penguin:~/directories**/Monkeys/hate$ ls
+bananas.html  bones.html
+mhs@penguin:~/directories**/Monkeys/hate$ cd ..
+mhs@penguin:~/directories**/Monkeys$ cd like
+mhs@penguin:~/directories**/Monkeys/like$ <bananas.html
+-bash: bananas.html: No such file or directory
+mhs@penguin:~/directories**/Monkeys/like$ ls
+mhs@penguin:~/directories**/Monkeys/like$ > bananas.html
+mhs@penguin:~/directories**/Monkeys/like$ > bones.html
+mhs@penguin:~/directories**/Monkeys/like$ cd ../../..
+mhs@penguin:~$ cd directories**
+mhs@penguin:~/directories**$ cd images
+mhs@penguin:~/directories**/images$ cd food
+-bash: cd: food: No such file or directory
+mhs@penguin:~/directories**/images$ cd clipart
+mhs@penguin:~/directories**/images/clipart$ cd food
+mhs@penguin:~/directories**/images/clipart/food$ cd ../..
+mhs@penguin:~/directories**/images$ cd ..
+mhs@penguin:~/directories**$ cd e-texts
+mhs@penguin:~/directories**/e-texts$ cd Poe,EdgarAllan
+mhs@penguin:~/directories**/e-texts/Poe,EdgarAllan$ ls
+poe1v10.txt,  poe1v10.zip  story2.txt
+mhs@penguin:~/directories**/e-texts/Poe,EdgarAllan$ dir
+poe1v10.txt,  poe1v10.zip  story2.txt
+mhs@penguin:~/directories**/e-texts/Poe,EdgarAllan$ ls -ln
+total 0
+-rw-r--r-- 1 1000 1000 0 Dec 14 15:52 poe1v10.txt,
+-rw-r--r-- 1 1000 1000 0 Dec 14 15:52 poe1v10.zip
+-rw-r--r-- 1 1000 1000 0 Dec 14 15:53 story2.txt
+mhs@penguin:~/directories**/e-texts/Poe,EdgarAllan$ cd
+mhs@penguin:~$ cd directories
+-bash: cd: directories: No such file or directory
+mhs@penguin:~$ cd directories**
+mhs@penguin:~/directories**$ cd images
+mhs@penguin:~/directories**/images$ pwd
+/home/mhs/directories**/images
+mhs@penguin:~/directories**/images$ mkdir photograpghs
+mhs@penguin:~/directories**/images$ cd photograph
+-bash: cd: photograph: No such file or directory
+mhs@penguin:~/directories**/images$ rmdir photograpgh
+rmdir: failed to remove 'photograpgh': No such file or directory
+mhs@penguin:~/directories**/images$ rmdir photograpghs
+mhs@penguin:~/directories**/images$ mkdir photographs.jpg
+mhs@penguin:~/directories**/images$ rmdir photographs.jpg
+mhs@penguin:~/directories**/images$ ls
+cartoons  clipart
+mhs@penguin:~/directories**/images$ cd photographs
+-bash: cd: photographs: No such file or directory
+mhs@penguin:~/directories**/images$ mkdir photographs
+mhs@penguin:~/directories**/images$ cd photographs
+mhs@penguin:~/directories**/images/photographs$ > sunrise.jpg
+mhs@penguin:~/directories**/images/photographs$ mv ../
+mv: missing destination file operand after '../'
+Try 'mv --help' for more information.
+mhs@penguin:~/directories**/images/photographs$ mn sunrise.jpg ../
+-bash: mn: command not found
+mhs@penguin:~/directories**/images/photographs$ mv sunrise.jpg ../
+mhs@penguin:~/directories**/images/photographs$ cd ../..
+mhs@penguin:~/directories**$ cd Monkeys
+mhs@penguin:~/directories**/Monkeys$ cd like
+mhs@penguin:~/directories**/Monkeys/like$ rm bananas.html
+mhs@penguin:~/directories**/Monkeys/like$ ls
+bones.html
+mhs@penguin:~/directories**/Monkeys/like$ /*current location for step number 10*/
+-bash: /*current: No such file or directory
+mhs@penguin:~/directories**/Monkeys/like$ ~
+-bash: /home/mhs: Is a directory
+mhs@penguin:~/directories**/Monkeys/like$ ~~
+-bash: ~~: command not found
+mhs@penguin:~/directories**/Monkeys/like$ ~cd
+-bash: ~cd: command not found
+mhs@penguin:~/directories**/Monkeys/like$ cd ..
+mhs@penguin:~/directories**/Monkeys$ cd ..
+mhs@penguin:~/directories**$ cd ..
+mhs@penguin:~$ code .
+-bash: code: command not found
+mhs@penguin:~$ cd ..
+mhs@penguin:/home$ code .
+-bash: code: command not found
+mhs@penguin:/home$ sudo snap install --classic code
+sudo: snap: command not found
+mhs@penguin:/home$ code .
+-bash: code: command not found
+mhs@penguin:/home$ pwd
+/home
+mhs@penguin:/home$ 
+mhs@penguin:/home$ ls
+mhs
+mhs@penguin:/home$ cd mhs
+mhs@penguin:~$ ls
+'directories**'                         linux
+'eclipse-inst-jre-linux64 (1).tar.gz'
+mhs@penguin:~$ cd ..
+mhs@penguin:/home$ cd linux
+-bash: cd: linux: No such file or directory
+mhs@penguin:/home$ ls
+mhs
+mhs@penguin:/home$ cd directories**
+-bash: cd: directories**: No such file or directory
+mhs@penguin:/home$ cd mhs
+mhs@penguin:~$ cd directories**
+mhs@penguin:~/directories**$ cd linux
+-bash: cd: linux: No such file or directory
+mhs@penguin:~/directories**$ cd Linux Files
+-bash: cd: too many arguments
